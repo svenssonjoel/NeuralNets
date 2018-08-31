@@ -1,0 +1,18 @@
+
+
+
+
+------------------------------------------------------------
+-- Setup 
+
+Activate virtual environment
+ source ~/tensorflow_venv/venv/bin/activate
+
+To exit virual environment use: deactivate
+
+
+upgrade pip (pythyn install tool)
+pip install -U pip 
+
+
+pip install -U tensorflow
