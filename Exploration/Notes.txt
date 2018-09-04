@@ -1,18 +1,22 @@
 
-
-
-
 ------------------------------------------------------------
--- Setup 
+-- Install python and TensorFlow
 
-Activate virtual environment
- source ~/tensorflow_venv/venv/bin/activate
+sudo apt-get install python3-pip python3-dev python-virtualenv
+sudo apt-get install python-testresources
 
-To exit virual environment use: deactivate
+pip install -U pip
 
+Create virtual env: 
+  mkdir ~/tensorflow
+  cd ~/tensorflow
+  virtualenv --system-site-packages -p python3 venv
 
-upgrade pip (pythyn install tool)
-pip install -U pip 
+Switch to virtual env: 
+  source ~/tensorflow/venv/bin/activate
 
+Install TensorFlow:
+  pip install -U tensorflow
 
-pip install -U tensorflow
+Test: 
+  python -c "import tensorflow as tf; print(tf.__version__)"
